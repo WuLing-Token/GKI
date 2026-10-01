@@ -1503,7 +1503,7 @@ jobs:
                 # 直接生成 ksu.fragment，防止 diff 报空
                 FRAG="common/arch/arm64/configs/ksu.fragment"
                 mkdir -p "common/arch/arm64/configs/"
-                cat > "$FRAG" << 'EOF'
+                cat > "$FRAG" <<'EOF'
                 CONFIG_KSU=y
                 CONFIG_KSU_SUSFS=y
                 CONFIG_KSU_SUSFS_SUS_PATH=y
